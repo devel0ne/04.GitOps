@@ -15,5 +15,5 @@ jobs:
       - run: echo "The ${{ github.repository }} repository will be cloned to the runner."
       - uses: actions/checkout@v1
       - name: Check new files
-        run: echo branch: ${{GITHUB_REF##*/}}
+        run: echo branch ${GITHUB_REF##*/}
 
