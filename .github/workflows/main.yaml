@@ -25,7 +25,10 @@ jobs:
             awk '{print gsub(/\t/,"")}' $file | awk '{s+=$1} END { print "Count "s }' >> Artifacts/${file}_artifacts  
           ) & 
           done
-
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts
+          path: ./Artifacts/ 
 
 
 
