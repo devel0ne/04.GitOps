@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: [my_runner]
+    runs-on: [github_runner]
     steps:
       - run: echo "The ${{ github.repository }} repository will be cloned to the runner."
       - uses: actions/checkout@v1
