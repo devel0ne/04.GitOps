@@ -128,15 +128,6 @@ data:
           shell:
             shell: "/bin/bash"
 ---
-apiVersion: v1
-kind: Secret
-metadata:
-  name: jenkins-secret
-  namespace: ci-cd
-type: Opaque
-data:
-  password: cGFzc3dvcmQK
----
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
