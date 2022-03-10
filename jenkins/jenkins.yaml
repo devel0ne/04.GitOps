@@ -169,7 +169,7 @@ metadata:
   name: jenkins
   namespace: ci-cd
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - name: master
       port: 8080
